@@ -4,99 +4,99 @@ Qunatum FROG code. Phase retrieval algorithm for separable state generalized pro
 
 
 
-\# Quantum Pulse Recovery from OPA + SFG-XFROG (MATLAB)
+# Quantum Pulse Recovery from OPA + SFG-XFROG (MATLAB)
 
-\## Overview
+## Overview
 
-\- Phase retrieval algorithm for separable state generalized projections algorithm (decomposing spectrogram that is a weighted sum of independent spectrograms built from orthonormal modes)
+- Phase retrieval algorithm for separable state generalized projections algorithm (decomposing spectrogram that is a weighted sum of independent spectrograms built from orthonormal modes)
 
-\- Reproduce recovered quantum pulse figures used in Quantum FROG Main Manuscript
+- Reproduce recovered quantum pulse figures used in Quantum FROG Main Manuscript
 
 
 
-\## Repo Contents
+## Repo Contents
 
 This repository contains MATLAB code and example data for recovering ultrafast quantum optical pulses from measured XFROG data. 
 
 
 
-\### Folders: 
+### Folders: 
 
-\- MeasuredRawData: contains raw measured spectrogram data used to generate plots in Quantum FROG paper. 
+- MeasuredRawData: contains raw measured spectrogram data used to generate plots in Quantum FROG paper. 
 
-\- RecoveredModesData: contains recovered amplified vacuum and amplified squeezed modes information
-
-
-
-\### Codes: 
-
-\- svdFROGMM: Runs multimode iterative phase retrieval algorithm given spectrogram input
-
-\- svdexFROGMM: Called by svdFROGMM - applies nonlinearity constraint at each iteration
-
-\- makeXFROGMM: Called by svdFROGMM, ExpQuantumPulseRecovery, TheoryExpMacroscopicPulseRecovery
+- RecoveredModesData: contains recovered amplified vacuum and amplified squeezed modes information
 
 
 
-\### Demos: 
+### Codes: 
 
-\- ExpQuantumPulseRecovery: Loads recovered ampified vacuum and amplified squeezed vacuum information (see Quantum FROG main manuscript) and recovers quantum pulse
+- svdFROGMM: Runs multimode iterative phase retrieval algorithm given spectrogram input
 
-\- TheoryExpMacroscopicPulseRecovery: Loads theoretical or experimental spectrogram (user set) and runs phase retrieval algorithm
+- svdexFROGMM: Called by svdFROGMM - applies nonlinearity constraint at each iteration
+
+- makeXFROGMM: Called by svdFROGMM, ExpQuantumPulseRecovery, TheoryExpMacroscopicPulseRecovery
 
 
 
-\## System requirements
+### Demos: 
 
-\### Software requirements: 
+- ExpQuantumPulseRecovery: Loads recovered ampified vacuum and amplified squeezed vacuum information (see Quantum FROG main manuscript) and recovers quantum pulse
+
+- TheoryExpMacroscopicPulseRecovery: Loads theoretical or experimental spectrogram (user set) and runs phase retrieval algorithm
+
+
+
+## System requirements
+
+### Software requirements: 
 
 Tested on MATLAB R2022B
 
 
 
-\### Operating system requirements: 
+### Operating system requirements: 
 
 Tested on Windows 11
 
 
 
-\## Installation guide
+## Installation guide
 
-\- Download repository. 
+- Download repository. 
 
-\- Open MATLAB and add repository to path. 
+- Open MATLAB and add repository to path. 
 
-\- Typical setup time: few minutes 
-
-
-
-\## Running instructions: 
-
-\### Demo
-
-\#### Run ExpQuantumPulseRecovery to reproduce quantum pulse measurement data displayed main Quantum FROG manuscript.
-
-\- Expected output: MATLAB figures displaying results. 
-
-\- Expected run time: Less than one minute
+- Typical setup time: few minutes 
 
 
 
-\#### Run TheoryExpMacroscopicPulseRecovery to see examples of phase retrieval. 
+## Running instructions: 
 
-\- Expected output: MATLAB figures displaying results.
+### Demo
 
-\- Expected run time: Minutes to hours depending on number of iterations, size of spectrogram (can be defined by user)
+#### Run ExpQuantumPulseRecovery to reproduce quantum pulse measurement data displayed main Quantum FROG manuscript.
 
+- Expected output: MATLAB figures displaying results. 
 
-
-\#### Run on user defined spectrogram 
-
-\- Call svdFROGMM with your spectrogram to run phase retrieval on your data. Use TheoryExpMacroscopicPulseRecovery as an example on how to call svdFROGMM.
+- Expected run time: Less than one minute
 
 
 
-\## Software licensing notice
+#### Run TheoryExpMacroscopicPulseRecovery to see examples of phase retrieval. 
+
+- Expected output: MATLAB figures displaying results.
+
+- Expected run time: Minutes to hours depending on number of iterations, size of spectrogram (can be defined by user)
+
+
+
+#### Run on user defined spectrogram 
+
+- Call svdFROGMM with your spectrogram to run phase retrieval on your data. Use TheoryExpMacroscopicPulseRecovery as an example on how to call svdFROGMM.
+
+
+
+## Software licensing notice
 
 The software is provided at no cost for academic and non-commercial use.
 

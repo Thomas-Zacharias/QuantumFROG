@@ -1,4 +1,4 @@
-%% Load amplified vacuum and amplified squeezed vacuum data post phase retrieval alogrithm and recovers quantum pulse
+﻿%% Load amplified vacuum and amplified squeezed vacuum data post phase retrieval alogrithm and recovers quantum pulse
 %% Generates figures used in Quantum FROG paper
 
 close all; 
@@ -93,7 +93,7 @@ end
 function PlotSpectrogramsAmpPhaseDataOrthonormAndGainAndSpectrograms(ampQuad, orthonormcomplexModes, gainMat, complexModes, ampVacGainMat, sqStr)
     %% Plot measured and recovered spectrogram, and recovered complex modes and associated spectrograms
 
-    units = Units(); https://nlo.slack.com/files/U042L9QB8LF/F0AB02LUWKX/fig1b.m?origin_team=TTGCKJLA0&origin_channel=D07PQ3ERV2P
+    units = Units();
 
     TiS = 1;
     gatePulseEnvelope = LoadGatePulse(ampQuad.t, TiS);
@@ -286,7 +286,7 @@ function WhiteColorMap()
     % Original jet colormap
     jetmap = jet(n - nfade);
     
-    % White → first jet color gradient
+    % White â†’ first jet color gradient
     fade = [linspace(1, jetmap(1,1), nfade)', ...
             linspace(1, jetmap(1,2), nfade)', ...
             linspace(1, jetmap(1,3), nfade)'];

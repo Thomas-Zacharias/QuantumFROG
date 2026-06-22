@@ -1,6 +1,6 @@
 # QuantumFROG
 
-Qunatum FROG code. Phase retrieval algorithm for separable state generalized projections algorithm. Reproduces figures used in Quantum FROG main manuscript
+Quantum FROG code. Phase retrieval algorithm for separable state generalized projections algorithm. Reproduces figures used in Quantum Frequency Resolved Optical Gating of Few-Cycle Squeezed Vacuum main manuscript
 
 
 

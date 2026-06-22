@@ -1,4 +1,4 @@
-﻿%% Load amplified vacuum and amplified squeezed vacuum data post phase retrieval alogrithm and recovers quantum pulse
+%% Load amplified vacuum and amplified squeezed vacuum data post phase retrieval alogrithm and recovers quantum pulse
 %% Generates figures used in Quantum FROG paper
 
 close all; 
@@ -286,7 +286,7 @@ function WhiteColorMap()
     % Original jet colormap
     jetmap = jet(n - nfade);
     
-    % White â†’ first jet color gradient
+    % White first jet color gradient
     fade = [linspace(1, jetmap(1,1), nfade)', ...
             linspace(1, jetmap(1,2), nfade)', ...
             linspace(1, jetmap(1,3), nfade)'];
